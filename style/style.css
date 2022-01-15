@@ -34,7 +34,7 @@ nav ul{
 }
 nav ul li{
     list-style: none;
-    margin-left: 10px;
+    margin-left: 35px;
 }
 nav ul li a{
     text-decoration: none;
@@ -45,4 +45,48 @@ nav ul li a{
 }
 .menu-icon{
     font-size:18px;
+}
+section{
+    margin-top: 35px;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-text-area{
+    align-content: center;
+    display: grid;
+
+}
+.banner-title{
+    font-size: 52px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 5px;
+}
+.banner-details{
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--primary-font);
+}
+.prebook{
+    background-color: #E02C6D;
+    border-radius: 22px;
+    padding: 14px 25px;
+    border: 0;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    width: 200px;
+}
+.prebook .fa-arrow-right{
+    margin-left: 10px;
+}
+.banner-image-grid{
+    display: flex;
+    margin-left: auto;
+    border: 3px solid #f2ebf8;
+    border-radius: 237.5px;
 }
