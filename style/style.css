@@ -393,4 +393,11 @@ footer{
         font-size: 14px;
         font-weight: 400;
     }
+    .featured-title{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .featured-product-title{
+        font-size: 28px;
+    }
 }
