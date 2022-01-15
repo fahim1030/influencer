@@ -321,7 +321,7 @@ footer{
     margin: 0 5px;
     
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 667px) {
     main{
         width: 90%;
     }
@@ -401,3 +401,21 @@ footer{
         font-size: 28px;
     }
 }
+@media only screen and (min-device-width: 668px) and (max-device-width: 991px) {
+    main {
+        width: 90%;
+    }
+    nav ul li {
+        margin-left: 15px;
+    }
+    .banner-image-grid{
+        width:100%
+    }
+    .client img{
+        width: 65%;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
