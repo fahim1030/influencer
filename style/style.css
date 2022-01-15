@@ -14,6 +14,9 @@ main{
 header{
     display: flex;
 }
+.threeline{
+    display: none;
+}
 .logo{
     padding-top: 8px;
 }
@@ -26,8 +29,8 @@ header{
     display:flex;
     margin-left: auto;
 }
-nav{
-
+.mobile-menu{
+    display: none;
 }
 nav ul{
     display: flex;
@@ -317,4 +320,38 @@ footer{
     font-size: 32px;
     margin: 0 5px;
     
+}
+@media only screen and (max-width: 600px) {
+    main{
+        width: 90%;
+        padding: 0 5%;
+    }
+    header, .banner, .products {
+        display: block;
+    }
+    .logo-text{
+        text-align: center;
+        display: block;
+    }
+    .threeline{
+        display: block;
+        position: relative;
+        top: 1.7em;
+        left: 2em;
+    }
+    
+    nav ul{
+        display: none;
+    }
+    .threeline i:hover .mobile-menu ul {
+        display: block;
+    }
+    .client{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .banner-image-grid {
+        display: block;
+        width: 100%;
+    }   
 }
