@@ -14,7 +14,7 @@ main{
 header{
     display: flex;
 }
-.threeline{
+.threeline, .cart-icon{
     display: none;
 }
 .logo{
@@ -324,7 +324,6 @@ footer{
 @media only screen and (max-width: 600px) {
     main{
         width: 90%;
-        padding: 0 5%;
     }
     header, .banner, .products {
         display: block;
@@ -337,21 +336,61 @@ footer{
         display: block;
         position: relative;
         top: 1.7em;
-        left: 2em;
+        left: 0;
     }
     
     nav ul{
         display: none;
     }
-    .threeline i:hover .mobile-menu ul {
+    .threeline i:hover .mobile-menu ul, .featured-content {
         display: block;
     }
     .client{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .client img{
+        width: 60%;
+    margin: 10px auto;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .banner-image-grid {
         display: block;
-        width: 100%;
-    }   
+        width: 90%;
+        margin: 0 auto;
+    }
+    .cart-icon{
+        display: inline;
+        top: -26px;
+        position: relative;
+        float: right;
+    }
+    .banner-title{
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.5;
+
+    }
+    .banner-details{
+        text-align: center;
+        font-weight: 500;
+    }
+    .prebook{
+        margin: 0 auto;
+        font-weight: 500;
+    }
+    .product-section-title{
+        font-size: 16px;
+    font-weight: 600;
+    }
+    .single-product > .product-name, .product-price{
+        font-weight: 600;
+    }
+    .product-description{
+        font-size: 14px;
+        font-weight: 400;
+    }
 }
