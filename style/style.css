@@ -46,8 +46,8 @@ nav ul li a{
 .menu-icon{
     font-size:18px;
 }
-section{
-    margin-top: 35px;
+section, header{
+    margin: 55px 0;
 }
 .banner{
     display: grid;
@@ -89,4 +89,13 @@ section{
     margin-left: auto;
     border: 3px solid #f2ebf8;
     border-radius: 237.5px;
+}
+.client{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 25px 0;
+    border-width: 3px;
+    border-style :solid;
+    border-image: url('../images/border.png') 30 fill / 3px / 2px space;
+
 }
